@@ -1,4 +1,4 @@
-#!/home/alta5/Documents/DJANGO/DJANGO_MVC/proj_model/env_proj_model/bin/python
+#!/home/alta5/Documents/DJANGO/DJANGO_MVC/proj_model/env_proj_model/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
