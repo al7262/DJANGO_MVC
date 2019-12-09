@@ -1,0 +1,36 @@
+proj_adv_views
+├── env_proj_adv_views
+│   ├── bin
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── activate.ps1
+│   │   ├── activate_this.py
+│   │   ├── activate.xsh
+│   │   ├── django-admin
+│   │   ├── django-admin.py
+│   │   ├── easy_install
+│   │   ├── easy_install-3.6
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.6
+│   │   ├── __pycache__
+│   │   ├── python -> python3
+│   │   ├── python3
+│   │   ├── python3.6 -> python3
+│   │   ├── python-config
+│   │   ├── sqlformat
+│   │   └── wheel
+│   ├── include
+│   │   └── python3.6m -> /usr/include/python3.6m
+│   └── lib
+│       └── python3.6
+└── project_adv_views
+    ├── manage.py
+    └── project_adv_views
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+
+9 directories, 24 files
