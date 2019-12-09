@@ -18,5 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('trial/', include('trial.urls'))
+    path('trial/', include('trial.urls')),
+    path('hospital/', include('Hospital.urls')),
+    path('zoo/', include('Zoo.urls')),
+    path('ata/', include('ATA.urls'))
 ]

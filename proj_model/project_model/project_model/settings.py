@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Zoo.apps.ZooConfig',
+    'ATA.apps.AtaConfig',
+    'Hospital.apps.HospitalConfig',
     'trial.apps.TrialConfig',
     'django.contrib.admin',
     'django.contrib.auth',
