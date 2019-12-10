@@ -1,0 +1,44 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <a class="btn btn-primary float" href="{% url 'blog:post' %}"><p>+</p></a>
+    {% if blogs %}
+        {% for blog in blogs %}
+            <div class="home-gap50"></div>
+            <article class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row col-md-12 header">
+                        <img src="{{blog.photo}}" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="p-date">{{blog.date}}</p>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <p class="p-date">{{blog.totComment}} comment</p>
+                        </div>
+                    </div>
+                    <div class="row col-md-12 title">
+                        <h1>{{blog.title}}</h1>
+                        <p class="d-inline-block text-truncate">{{blog.content}}</p>
+                        <a href="{% url 'blog:more' blog.id %}">Baca Selengkapnya...</a>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </article>
+            <div class="home-gap50"></div>
+        {% endfor %}
+    {% else %}
+        <article class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row col-md-12 title">
+                    <h1>There is nothing to show here....</h1>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </article>
+    {% endif %}
+{% endblock %}

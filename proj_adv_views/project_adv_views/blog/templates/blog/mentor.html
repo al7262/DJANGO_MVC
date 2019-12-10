@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row col-md-12 d-flex justify-content-center">
+        <h1>Our Mentor</h1>
+    </div>
+    <div class="row home-gap20"></div>
+    <div class="row home-gap20"></div>
+    <div class="container">
+        {% if mentors %}
+            {% for mentor in mentors %}
+                <div class="row">
+                    <div class="col-md-4 header">
+                        <img src="{{mentor.photo}}" alt="">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 mentor">
+                        <h3>{{mentor.name}}</h3>
+                        <p id="bold">{{mentor.title}} ({{mentor.year}} year)</p>
+                        <p>"{{mentor.quote}}"</p>
+                    </div>
+                </div>
+                <div class="row home-gap50"></div>
+            {% endfor %}
+        {% else %}
+            <div class="row col-md-12 title">
+                <h1>There is nothing to show here.....</h1>
+            </div>
+        {% endif %}
+    </div>
+    <div class="row home-gap50"></div>
+{% endblock %}

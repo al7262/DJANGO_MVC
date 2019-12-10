@@ -1,0 +1,191 @@
+.navbar-brand{
+    font-size: 25px;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+.blue-bg{
+    background-color: #2ec6ce;
+}
+
+.black-bg{
+    background-color: black;
+}
+
+.intro{
+    padding: 40px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-intro{
+    text-align: center;
+    color: white;
+}
+
+.h5-intro{
+    text-align: center;
+    color: white;
+}
+
+.p-intro{
+    padding: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+.list-product{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.list-footer h3{
+    color: black;
+    align-self:baseline;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.list-footer img{
+    height: 35px;
+}
+
+.list-footer{
+    display: inline;
+    align-self: center;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.h6-footer{
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+
+.h6-footer span{
+    color: blue;
+    text-decoration-line: underline;
+}
+
+/* END OF BASE */
+
+.content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.home-benefit{
+    margin-bottom: 20px;
+}
+
+.home-gap50{
+    height: 50px;
+}
+
+.home-gap20{
+    height: 20px;
+}
+
+.big-img{
+    width: 100%;
+}
+
+.outside-box{
+    padding: 10px;
+    margin: 0;
+}
+
+.box {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+    max-height: 50px;
+}
+
+/* END OF HOME */
+
+.header{
+    margin: 0;
+    padding: 0;
+}
+
+.header img{
+    width: 100%;
+}
+
+.p-date{
+    padding: 10px 0;
+    margin: 0
+}
+
+.title{
+    padding: 0;
+    margin: 0;
+}
+
+.title h1{
+    padding: 0;
+    margin: 0;
+}
+
+.title p{
+    padding: 0;
+    margin: 15px 0;
+}
+
+.mentor h3{
+    padding: 0;
+    margin: 0;
+    color: gray;
+}
+
+.mentor p#bold{
+    font-weight: bold;
+}
+
+.profile{
+    margin: 0;
+    padding: 0px;
+}
+
+.profile img, iframe{
+    width: 100%;
+    margin: 0 20px;
+}
+
+.profile h3{
+    margin: 10px 0;
+}
+
+.profile p span{
+    font-weight: bold;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+    right:40px;
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius:50px;
+    text-align:center;
+    background-color: #2ec6ce;
+    border: 0px;
+	box-shadow: 2px 2px 3px #999;
+}

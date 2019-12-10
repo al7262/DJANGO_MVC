@@ -1,0 +1,35 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row col-md-12 d-flex justify-content-center">
+        <h1>Our Mentee</h1>
+    </div>
+    <div class="row home-gap20"></div>
+    <div class="row home-gap20"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            {% if mentees %}
+                {% for mentee in mentees %}
+                    <div class="row">
+                        <div class="col-md-4 header">
+                            <img src="{{mentee.photo}}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>{{mentee.name}} ({{mentee.age}} y.o.)</h3>
+                            <p>"{{mentee.quote}}"</p>
+                        </div>
+                    </div>
+                    <div class="row home-gap50"></div>
+                {% endfor %}
+            {% else %}
+                <div class="row col-md-12 title">
+                    <h1>There is nothing to show here.....</h1>
+                </div>
+            {% endif %}
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row home-gap50"></div>
+{% endblock %}

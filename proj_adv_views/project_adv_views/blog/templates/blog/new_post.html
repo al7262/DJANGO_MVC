@@ -1,0 +1,43 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="home-gap50"></div>
+    <article class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form method="POST" action="{% url 'blog:posted' %}">
+                {% csrf_token %} 
+                <div class="row">
+                    <div class="col-md-2"><label for="title">Title</label></div>
+                    <div class="col-md-1 pr-0 d-flex justify-content-center"><p>:</p></div>
+                    <div class="col-md-9">
+                        <input type="text" name="title" id="title" placeholder="Input Title for Post" style="width: 100%;" required>
+                    </div>
+                </div>
+                <div class="row home-gap20"></div>
+                <div class="row">
+                    <div class="col-md-2"><label for="photo">Photo Url</label></div>
+                    <div class="col-md-1 pr-0 d-flex justify-content-center"><p>:</p></div>
+                    <div class="col-md-9">
+                        <input type="text" name="photo" id="photo" placeholder="Input photos URL" style="width: 100%;" required>
+                    </div>
+                </div>
+                <div class="row home-gap20"></div>
+                <div class="row">
+                    <div class="col-md-2"><label for="content">Content</label></div>
+                    <div class="col-md-1 pr-0 d-flex justify-content-center"><p>:</p></div>
+                    <div class="col-md-9">
+                        <textarea name="content" id="content" value="content" placeholder="Input the content for post" style="width: 100%; height: 500px;" required></textarea>
+                    </div>
+                </div>
+                <div class="row home-gap50"></div>
+                <div class="row col-md-12 d-flex justify-content-end">
+                    <button class="btn btn-primary" type="submit">Post it!</button>
+                </div>
+               
+            </form>
+        </div>
+    </article>
+    <div class="home-gap50"></div>
+{% endblock %}
