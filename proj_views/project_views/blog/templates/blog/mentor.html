@@ -1,0 +1,49 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row col-md-12 d-flex justify-content-center">
+        <h1>Our Mentor</h1>
+    </div>
+    <div class="row home-gap20"></div>
+    <div class="row home-gap20"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 header">
+                <img src="{% static 'img\mentor\andreas.png' %}" alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 mentor">
+                <h3>Andreas Nugroho</h3>
+                <p id="bold">Software Ninja (5 Years Experience)</p>
+                <p>"Great place to learn about programming. Come and Join us!"</p>
+            </div>
+        </div>
+        <div class="row home-gap50"></div>
+        <div class="row">
+            <div class="col-md-4 header">
+                <img src="{% static 'img\mentor\ramdhan.png' %}" alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 mentor">
+                <h3>Ramdhan Hidayat</h3>
+                <p id="bold">Master of Chaos (10 Years Experience)</p>
+                <p>"We make this program with passion, hard work and heart. Let's get rock with us!"</p>
+            </div>
+        </div>
+        <div class="row home-gap50"></div>
+        <div class="row">
+            <div class="col-md-4 header">
+                <img src="{% static 'img\mentor\trimo.png' %}" alt="">
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-7 mentor">
+                <h3>Trimo Leksono</h3>
+                <p id="bold">Magician (8 Years Experience)</p>
+                <p>"The best place for those who want to become great IT person!"</p>
+            </div>
+        </div>
+        <div class="row home-gap50"></div>
+</div>
+<div class="row home-gap50"></div>
+{% endblock %}

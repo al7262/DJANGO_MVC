@@ -1,0 +1,47 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row col-md-12 d-flex justify-content-center">
+        <h1>Our Mentee</h1>
+    </div>
+    <div class="row home-gap20"></div>
+    <div class="row home-gap20"></div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-4 header">
+                    <img src="{% static 'img\mentee\jobs.png' %}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3>Steve Jobs</h3>
+                    <p>"I learn so much from Alpha Tech"</p>
+                </div>
+            </div>
+            <div class="row home-gap50"></div>
+            <div class="row">
+                <div class="col-md-4 header">
+                    <img src="{% static 'img\mentee\page.png' %}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3>Larry Page</h3>
+                    <p>"Great place to learn about programming"</p>
+                </div>
+            </div>
+            <div class="row home-gap50"></div>
+            <div class="row">
+                <div class="col-md-4 header">
+                    <img src="{% static 'img\mentee\mark.png' %}" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3>Mark Zuckerberg</h3>
+                    <p>"The best place for those who want to become a great IT person"</p>
+                </div>
+            </div>
+            <div class="row home-gap50"></div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row home-gap50"></div>
+{% endblock %}
