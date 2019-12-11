@@ -9,9 +9,11 @@ def index(request):
     })
 
 def blog(request):
-    blog = Blog.objects.all()
+    blogs = Blog.objects.all()
+    for blog in blogs:
+        blog.content = blog.content[:350]+"..."
     return render(request, 'blog/blog.html', {
-        'blogs': blog,
+        'blogs': blogs,
         'isBlog' : True
     })
 
@@ -45,9 +47,11 @@ def posted(request):
     toBlog.photo = request.POST['photo']
     toBlog.content = request.POST['content']
     toBlog.save()
-    blog = Blog.objects.all()
+    blogs = Blog.objects.all()
+    for blog in blogs:
+        blog.content = blog.content[:300]+"..."
     return render(request, 'blog/blog.html', {
-        'blogs': blog,
+        'blogs': blogs,
         'isPosted' : True,
         'isBlog': True
     })
